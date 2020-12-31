@@ -24,10 +24,11 @@ a:hover, a:focus {
 }
 
 hr {
-  max-width: 100px;
+  max-width: 200px;
   margin: 25px auto 0;
-  border-width: 1px;
-  border-color: rgba(34, 34, 34, 0.1);
+  border-width: 3px;
+  border-color: black;
+  color: #000;
 }
 
 hr.light {
@@ -202,6 +203,7 @@ header.masthead .device-container .screen img {
 section.download {
   position: relative;
   padding: 150px 0;
+  
 }
 
 section.download h2 {
@@ -399,6 +401,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   background: #fdcc52;
   background: linear-gradient(#fdcc52, #fdc539);
 }
+
+
 
 .text-primary {
   color: #fdcc52;

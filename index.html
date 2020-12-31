@@ -26,6 +26,13 @@
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
 
+
+  <style>
+    #download {
+      background-color: #e64f3b;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -33,7 +40,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Simple messenger</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -41,10 +48,11 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+            <a class="nav-link js-scroll-trigger" href="#features">Send SMS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+            <a class="nav-link js-scroll-trigger" href="#download">Template</a>
+            
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -59,8 +67,8 @@
       <div class="row h-100">
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
-            <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+            <h1 class="mb-5">Account info and Balance info</h1>
+            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">CHECK INFO !</a>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
@@ -82,26 +90,11 @@
     </div>
   </header>
 
-  <section class="download bg-primary text-center" id="download">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 mx-auto">
-          <h2 class="section-heading">Discover what all the buzz is about!</h2>
-          <p>Our app is available on any mobile device! Download now to get started!</p>
-          <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="features" id="features">
     <div class="container">
       <div class="section-heading text-center">
-        <h2>Unlimited Features, Unlimited Fun</h2>
-        <p class="text-muted">Check out what you can do with this app theme!</p>
+        <h2>Send Ur SMS </h2>
+        <p class="text-muted">Check out your mobile number,message and template here !</p>
         <hr>
       </div>
       <div class="row">
@@ -126,15 +119,17 @@
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="icon-screen-smartphone text-primary"></i>
-                  <h3>Device Mockups</h3>
-                  <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                  <h3> PHONE NUMBERS</h3>
+                  <p class="text-muted">Enter phone numbers seperated with commas</p>
+                  <input type="text" class="form-control" placeholder="phone numbers">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="icon-camera text-primary"></i>
-                  <h3>Flexible Use</h3>
-                  <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                  <h3>Choose your CSV file</h3>
+                  <p class="text-muted">Select your CSV file from your Desktop </p><br>
+                  <button type="submit" class="btn btn-danger">Choose file</button>
                 </div>
               </div>
             </div>
@@ -142,15 +137,30 @@
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="icon-present text-primary"></i>
-                  <h3>Free to Use</h3>
-                  <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                  <h3>Your Message</h3>
+                  <p class="text-muted">Enter your message Here!</p>
+                  <textarea type="text" class="form-control" placeholder="Enter message">
+                  </textarea>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="feature-item">
                   <i class="icon-lock-open text-primary"></i>
-                  <h3>Open Source</h3>
-                  <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                  <h3>Choose Template</h3>
+                  <p class="text-muted">Choose your Template here</p>
+                  <div class="dropdown">
+                    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Dropdown
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,15 +169,40 @@
       </div>
     </div>
   </section>
-
-  <section class="cta">
-    <div class="cta-content">
+  
+  
+  <!-- <section class="cta">
+    <div class="cta-content"></div>
       <div class="container">
-        <h2>Stop waiting.<br>Start building.</h2>
+        <h2>Design your TEMPLATE !</h2>
         <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
       </div>
     </div>
     <div class="overlay"></div>
+  </section> -->
+  
+
+  <section class="download  text-center" id="download">
+    <div class="container">
+      
+          <h2 class="section-heading">Design your TEMPLATE</h2>
+          <h3>Give your name and message</h3><hr><br>
+          <div class="row">
+          <div class="col-lg-6">
+            
+              <p style="color:white" >Enter your HEADER Here!</p>
+              <input type="text" class="form-control" placeholder="Enter header">
+            
+          </div>
+            <div class="col-lg-6">
+            
+              <p style="color:white">Enter your MESSAGE Here!</p>
+              <textarea type="text" class="form-control" placeholder="Enter Message">
+              </textarea>
+            </div>  
+          </div>
+        </div>
+      
   </section>
 
   <section class="contact bg-primary" id="contact">
